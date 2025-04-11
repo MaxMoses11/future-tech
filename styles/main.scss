@@ -1,0 +1,23 @@
+@use 'normalise';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/icon';
+@use 'blocks/logo';
+@use 'blocks/button';
+@use 'blocks/burger-button';
+@use 'blocks/header';
+@use 'blocks/badge';
+@use 'blocks/soc1als';
+@use 'blocks/footer';
+@use "blocks/metrics";
+@use "blocks/team";
+@use "blocks/resources-preview";
+@use "blocks/advantage-card";
+@use "blocks/hero";
+
+.header, .footer {
+  display: none !important;
+}
