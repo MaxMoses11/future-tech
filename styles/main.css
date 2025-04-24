@@ -489,10 +489,10 @@ a[aria-label]::before, button[aria-label]::before {
   }
 }
 .icon--yellow-arrow::after {
-  background-image: url("icons/arrow-top-right_yellow.svg");
+  background-image: url("../icons/arrow-top-right_yellow.svg");
 }
 .icon--yellow-eye::after {
-  background-image: url("icons/eye_yellow.svg");
+  background-image: url("../icons/eye_yellow.svg");
 }
 
 .logo {
@@ -1029,7 +1029,7 @@ a[aria-label]::before, button[aria-label]::before {
   grid-area: resources-preview;
   padding-left: 5rem;
   padding-bottom: 5rem;
-  background: url("images/resources-preview/bg.png") 0 0/cover no-repeat;
+  background: url("../images/resources-preview/bg.png") 0 0/cover no-repeat;
 }
 @media (width <= 90.06125rem) {
   .hero__resources-preview {
@@ -1047,7 +1047,7 @@ a[aria-label]::before, button[aria-label]::before {
     width: 100vw;
     margin-left: calc(var(--container-padding-x) * -1);
     padding: 6.25rem 2.5rem 2.5rem;
-    background-image: url("images/resources-preview/bd_tablet.png");
+    background-image: url("../images/resources-preview/bd_tablet.png");
     background-size: contain;
   }
 }
@@ -1891,12 +1891,6 @@ a[aria-label]::before, button[aria-label]::before {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22.375rem, 1fr));
   gap: 1.875rem;
-}
-
-.header,
-.footer,
-main > *:not(:last-child) {
-  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
