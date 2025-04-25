@@ -1955,6 +1955,10 @@ a[aria-label]::before, button[aria-label]::before {
   padding: 1.875rem;
   transition-duration: var(--transition-duration);
 }
+.video-player__panel:not(.is-active) {
+  opacity: 0;
+  visibility: hidden;
+}
 .video-player__panel::before {
   content: "";
   position: absolute;
