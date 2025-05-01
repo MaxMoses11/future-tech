@@ -95,11 +95,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: rem(1);
+    column-gap: rem(50);
   }
 
   &__link {
-    min-width: 50%;
+    width: 100%;
     font-size: rem(18);
 
     @include laptop {
