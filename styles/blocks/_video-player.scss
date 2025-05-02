@@ -12,6 +12,10 @@
     @include laptop {
       border-radius: rem(10);
     }
+
+    &--small {
+      height: fluid(290, 208);
+    }
   }
 
   &__panel {
@@ -41,6 +45,11 @@
 
     * {
       position: relative;
+    }
+
+    &--center {
+      justify-content: center;
+      align-items: center;
     }
   }
 
