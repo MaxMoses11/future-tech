@@ -618,6 +618,11 @@ a[aria-label]::before, button[aria-label]::before {
     padding-block: 0.875rem;
   }
 }
+@media (width <= 30.06125rem) {
+  .header__promo {
+    font-size: 0.75rem;
+  }
+}
 .header__body {
   padding-block: 1.5rem;
   background-color: var(--color-dark-10);
@@ -745,6 +750,16 @@ a[aria-label]::before, button[aria-label]::before {
 @media (width <= 90.06125rem) {
   .soc1als--3-cols .soc1als__link {
     height: 3rem;
+  }
+}
+@media (any-hover: hover) {
+  .soc1als--3-cols .soc1als__link:hover {
+    border-color: var(--color-accent);
+  }
+}
+@media (any-hover: none) {
+  .soc1als--3-cols .soc1als__link:active {
+    border-color: var(--color-accent);
   }
 }
 .soc1als__list {
@@ -899,6 +914,7 @@ a[aria-label]::before, button[aria-label]::before {
 .metrics__item {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: start;
   row-gap: 0.625rem;
   padding: 3.125rem;
 }
@@ -1830,13 +1846,13 @@ a[aria-label]::before, button[aria-label]::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2.5rem;
+  row-gap: 3.75rem;
   max-width: 31.25rem;
   margin-inline: auto;
 }
 @media (width <= 90.06125rem) {
   .review-card {
-    row-gap: 1.875rem;
+    row-gap: 3.125rem;
   }
 }
 .review-card__author {
@@ -2559,6 +2575,9 @@ a[aria-label]::before, button[aria-label]::before {
 .field__control::placeholder {
   color: var(--color-dark-40);
 }
+.field__control:user-invalid {
+  border-color: var(--color-red);
+}
 .field textarea.field__control {
   resize: vertical;
   min-height: 10.1875rem;
@@ -2753,6 +2772,9 @@ a[aria-label]::before, button[aria-label]::before {
 .checkbox__input:not(:checked)::after {
   opacity: 0;
   visibility: hidden;
+}
+.checkbox__input:user-invalid {
+  border-color: var(--color-red);
 }
 .checkbox__input::after {
   content: "✔";
